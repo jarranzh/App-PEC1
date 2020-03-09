@@ -1,0 +1,10 @@
+body {
+    padding: 40px 50px;
+}
+li {
+    list-style: none;
+    padding: 10px 5px;
+}
+li:hover {
+    background-color: rgb(206, 201, 201);
+}

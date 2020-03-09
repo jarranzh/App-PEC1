@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"style.e308ff8e.css","sourceRoot":"..","sourcesContent":["body {\n    padding: 40px 50px;\n}\nli {\n    list-style: none;\n    padding: 10px 5px;\n}\nli:hover {\n    background-color: rgb(206, 201, 201);\n}\n"]}
