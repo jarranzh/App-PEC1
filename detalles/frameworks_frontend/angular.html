@@ -1,53 +1,144 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Angular</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css"  href="../../style.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <header class="detail_header">
-        <a href="../../categorias/frameworks_frontend.html"><button type="button" class="btn btn-info">Volver a Lenguajes Frontend</button></a>
-        <a href="../../index.html"><button type="button" class="btn btn-info">Volver a Inicio</button></a>
+      <a href="../../categorias/frameworks_frontend.html"
+        ><button type="button" class="btn btn-info">
+          Volver a Frameworks Frontend
+        </button></a
+      >
+      <a href="../../index.html"
+        ><button type="button" class="btn btn-info">Volver a Inicio</button></a
+      >
     </header>
+    <nav class="nav">
+      <a href="../../categorias/lenguajes_frontend.html">Lenguajes Frontend</a>
+      <a href="../../categorias/frameworks_frontend.html">Frameworks Frontend</a>
+      <a href="../../categorias/preprocesadores_css.html">Preprocesadores CSS</a>
+      <a href="../../categorias/frameworks_css.html">Frameworks CSS</a>
+      <a href="../../categorias/testing.html">Testing</a>
+      <a href="../../categorias/module_bundlers.html">Module Bundlers</a>
+    </nav>
     <div class="course_title">
-        <img src = '../../images/logo_angular.png'></img>
-        <h1>ANGULAR</h1>
+      <img src="../../images/logo_angular.png" />
+      <h1>ANGULAR</h1>
     </div>
-<div class="wrapper">
-    <h2>¿Qué es Angular?</h2>
-    <p>Angular es un framework de desarrollo para JavaScript creado por Google. La finalidad de Angular es facilitarnos el desarrollo de aplicaciones web SPA y además darnos herramientas para trabajar con los elementos de una web de una manera más sencilla y optima.</p>
-    <p>Otro propósito que tiene Angular es la separación completa entre el front-end y el back-end en una aplicación web.</p>
-    <code><pre>
-            &lt!DOCTYPE html&gt
-            &lthtml&gt
-            &ltbody&gt
-        
-            &lth1&gtThis is a Heading&lt/h1&gt
-        
-            &ltp&gtThis is a paragraph.&lt/p&gt
+    <div class="wrapper">
+      <div class="wrapper-section">
+        <h2>¿Qué es Angular?</h2>
+        <p>
+          Angular (comúnmente llamado Angular 2+ o Angular 2) es un framework
+          para aplicaciones web desarrollado en TypeScript, de código abierto,
+          mantenido por Google, que se utiliza para crear y mantener
+          aplicaciones web de una sola página. Su objetivo es aumentar las
+          aplicaciones basadas en navegador con capacidad de Modelo Vista
+          Controlador (MVC), en un esfuerzo para hacer que el desarrollo y las
+          pruebas sean más fáciles.
+        </p>
+        <p>
+          La biblioteca lee el HTML que contiene atributos de las etiquetas
+          personalizadas adicionales, entonces obedece a las directivas de los
+          atributos personalizados, y une las piezas de entrada o salida de la
+          página a un modelo representado por las variables estándar de
+          JavaScript.
+        </p>
+        <p>
+          Angular se basa en clases tipo "Componentes", cuyas propiedades son
+          las usadas para hacer el binding de los datos. En dichas clases
+          tenemos propiedades (variables) y métodos (funciones a llamar).
+        </p>
+        <img
+          src="../../images/angular_caracteristicas.png"
+          alt="caracteristicas de Angular"
+        />
+      </div>
+      <div class="wrapper-section">
+        <h2>Principales características de Angular:</h2>
+        <h3>Velocidad y rendimiento:</h3>
+        <ul>
+          <li>
+            Generación de código: Angular convierte tus plantillas en código
+            altamente optimizado para las máquinas virtuales de JavaScript de
+            hoy en día, ofreciéndote todas las ventajas del código escrito a
+            mano con la productividad de un framework.
+          </li>
+          <li>
+            Universal: Ejecuta la primera vista de tu aplicación en node.js,
+            .NET, PHP, y otros servidores para renderizado de forma casi
+            instantánea obteniendo solo HTML y CSS. También abre posibilidades
+            para la optimización del SEO del sitio.
+          </li>
+          <li>
+            División del código: Las aplicaciones de Angular se cargan
+            rápidamente gracias al nuevo enrutador de componentes. Éste ofrece
+            una división automática de códigos para que los usuarios sólo
+            carguen el código necesario para procesar la vista que solicitan.
+          </li>
+        </ul>
+        <h3>Productividad</h3>
+        <ul>
+          <li>
+            Plantillas: Permite crear rápidamente vistas de interfaz de usuario
+            con una sintaxis de plantilla simple y potente.
+          </li>
+          <li>
+            Angular CLI: Las herramientas de línea de comandos permiten empezar
+            a desarrollar rápidamente, añadir componentes y realizar test, así
+            como previsualizar de forma instantánea la aplicación./li>
+          </li>
+          <li>
+            IDEs: Obtén sugerencias de código inteligente, detección de errores
+            y otros comentarios en la mayoría de los editores populares e IDEs.
+          </li>
+        </ul>
+        <h3>Historia completa del desarrollo</h3>
+        <ul>
+          <li>
+            Testing: Utiliza Karma para realizar pruebas unitarias, y Protractor
+            para realizar pruebas end-to-end de forma rápida y estable.
+          </li>
+          <li>
+            Animación: Permite crear animaciones complejas y de alto rendimiento
+            con muy poco código a través de la intuitiva API de Angular.
+          </li>
+          <li>
+            Accesibilidad: Posee características para crear aplicaciones
+            accesibles con los componentes disponibles para ARIA.
+          </li>
+        </ul>
+      </div>
+      <div class="wrapper-section">
+        <h2>¿Quieres saber más?</h2>
+        <p>
+          Puedes cosultar la documentación oficial de Angular haciendo click
+          <a target="_blank" href="https://angular.io/start">aquí.</a>
+        </p>
+      </div>
+      <div class="bottom-section">
+        <h3>Quizás te interese:</h3>
+        <ul class="bottom-section_list">
+          <li><a href="./react.html">Aprender sobre React</a></li>
+          <li><a href="./vue.html">Aprender sobre Vue</a></li>
+        </ul>
+      </div>
+    </div>
 
-            &ltp&gtThe following is a list of items:&lt/p&gt
-
-            &ltul&gt
-                &ltli&gtThis is item number 1.&lt/li&gt
-                &ltli&gtThis is item number 2.&lt/li&gt
-                &ltli&gtThis is item number 3.&lt/li&gt
-            &lt/ul&gt
-
-            &lt/body&gt
-            &lt/html&gt
-            
-    </pre></code>
-    <p>El resultado de este código se puede ver haciendo click <a target="_blank" href="https://codepen.io/jarranzh/pen/oNXqddw">aquí.</a></p>
-    
-    <h2>¿Quieres saber más?</h2>
-    <p>Puedes cosultar la documentación oficial de Angular haciendo click <a target="_blank" href="https://angular.io/start">aquí.</a></p>
-</div>
-    
-    <footer>Fuente: <a href="https://developer.mozilla.org/es/docs/Web/HTML">MDN web docs</a></footer>
-</body>
+    <footer>
+      Fuente:
+      <a href="https://es.wikipedia.org/wiki/Angular_(framework)">Wikipedia</a>
+    </footer>
+  </body>
 </html>
