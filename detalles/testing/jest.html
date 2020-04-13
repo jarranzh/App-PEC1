@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Jest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="../../index.js"></script>
+  </head>
+  <body>
+    <header class="detail_header">
+      <a href="../../categorias/testing.html">
+        <button type="button" class="btn btn-info">
+          Volver a Testing
+        </button></a
+      >
+
+      <a href="../../index.html">
+        <button type="button" class="btn btn-info">Volver a Inicio</button></a
+      >
+    </header>
+    <nav class="nav">
+      <a href="../../categorias/lenguajes_frontend.html">Lenguajes Frontend</a>
+      <a href="../../categorias/frameworks_frontend.html"
+        >Frameworks Frontend</a
+      >
+      <a href="../../categorias/preprocesadores_css.html"
+        >Preprocesadores CSS</a
+      >
+      <a href="../../categorias/frameworks_css.html">Frameworks CSS</a>
+      <a href="../../categorias/testing.html">Testing</a>
+      <a href="../../categorias/module_bundlers.html">Module Bundlers</a>
+    </nav>
+    <div class="course_title">
+      <img src="../../images/logo_jest.png" />
+      <h1>JEST</h1>
+    </div>
+    <div class="wrapper">
+      <div class="wrapper-section">
+        <h2>¿Qué es Jest?</h2>
+        <p>
+          Jest es un framework para realizar pruebas unitarias de JavaScript,
+          enfocado en la simplicidad.
+        </p>
+        <p>
+          Jest ha sido desarrollado por el equipo de Facebook y, aunque nace en
+          el contexto de React, es un framework de testing generalista que
+          podemos utilizar en cualquier situación. Pude ser usado con proyectos
+          que usen Babel, TypScript, Node.js, React, Angular y Vue.js
+        </p>
+      </div>
+      <div class="wrapper-section">
+        <h2>Principales características de Jest:</h2>
+        <p>
+          Para instalar Jest hay que ejecutar el siguiente comando:
+        </p>
+        <pre><code>
+            npm install --save-dev jest
+        </code></pre>
+        <p>
+          Para entender cómo usar Jest, usaremos de ejemplo la siguiente
+          función:
+        </p>
+        <pre><code>
+            function sum(a, b) {
+                return a + b;
+                }
+                module.exports = sum; 
+        </code></pre>
+        <p>
+          Si la anterior función estuviera dentro de un archivo llamado sum.js,
+          escribiremos nuestro test en un archivo llamado sum.test.js para que
+          jest lo coja automáticamente. El contenido sería el siguiente:
+        </p>
+        <pre><code>
+            const sum = require('./sum');
+
+            test('adds 1 + 2 to equal 3', () => {
+                expect(sum(1, 2)).toBe(3);
+            });
+            module.exports = sum;
+      </code></pre>
+        <p>
+          Para ejecutar el test y obtener el resultado en la terminal, debemos
+          ejecutar el siguiente comando:
+        </p>
+        <pre><code>
+            npm run test
+      </code></pre>
+      </div>
+      <div class="wrapper-section">
+        <h2>¿Quieres saber más?</h2>
+        <p>
+          La documentación oficial de Jest ofrece información muy completa para
+          entender bien todas sus características. Puedes cosultar la página web
+          haciendo click
+          <a target="_blank" href="https://jestjs.io/docs/es-ES/getting-started"
+            >aquí.</a
+          >
+        </p>
+      </div>
+      <div class="bottom-section">
+        <h3>Quizás te interese:</h3>
+        <ul class="bottom-section_list">
+          <li><a href="./enzyme.html">Aprender sobre Enzyme</a></li>
+          <li><a href="./cypress.html">Aprender sobre Cypress</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      Fuente:
+      <a href="https://en.wikipedia.org/wiki/Jest_(JavaScript_framework)"
+        >Wikipedia</a
+      >
+    </footer>
+  </body>
+</html>

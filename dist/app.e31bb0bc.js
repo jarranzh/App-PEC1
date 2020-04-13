@@ -127,30 +127,17 @@ function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
 
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("HOLA1");
-  console.log(document.querySelectorAll(".category_header"));
   var header = "";
 
   if (document.querySelector(".main_header")) {
-    console.log("main header");
     header = document.querySelector(".main_header");
-  } else if (document.querySelectorAll(".category_header")) {
-    console.log("category header");
-    header = document.querySelector(".category_header").getElementsByTagName('h1')[0]; //header = document.querySelector("h1");
-  } else if (document.querySelector(".detail_header")) {
-    console.log("HOLA2");
+  } else if (document.querySelectorAll(".category_header").length > 0) {
+    header = document.querySelector(".category_header").getElementsByTagName("h1")[0];
+  } else {
     header = document.querySelector("h1");
   }
 
-  console.log("HEADER: ", header);
   console.log("BIENVENIDO A", header.innerText);
-
-  var showPageLoaded = function showPageLoaded(e) {
-    console.log(e);
-    console.log("Bienvenido a", e.target.innerText);
-  };
-
-  header.addEventListener("DOMContentLoaded", showPageLoaded); //console.log("Bienvenido a FRONTEND ACADEMY!");
 
   var card = _toConsumableArray(document.getElementsByClassName("cards_wrapper-links"));
 
@@ -190,7 +177,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57413" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52331" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
