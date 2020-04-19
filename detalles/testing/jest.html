@@ -69,17 +69,17 @@
           Para instalar Jest hay que ejecutar el siguiente comando:
         </p>
         <pre><code>
-            npm install --save-dev jest
+        npm install --save-dev jest
         </code></pre>
         <p>
           Para entender cómo usar Jest, usaremos de ejemplo la siguiente
           función:
         </p>
         <pre><code>
-            function sum(a, b) {
-                return a + b;
-                }
-                module.exports = sum; 
+        function sum(a, b) {
+          return a + b;
+          }
+          module.exports = sum; 
         </code></pre>
         <p>
           Si la anterior función estuviera dentro de un archivo llamado sum.js,
@@ -87,19 +87,19 @@
           jest lo coja automáticamente. El contenido sería el siguiente:
         </p>
         <pre><code>
-            const sum = require('./sum');
+        const sum = require('./sum');
 
-            test('adds 1 + 2 to equal 3', () => {
-                expect(sum(1, 2)).toBe(3);
-            });
-            module.exports = sum;
+        test('adds 1 + 2 to equal 3', () => {
+            expect(sum(1, 2)).toBe(3);
+        });
+        module.exports = sum;
       </code></pre>
         <p>
           Para ejecutar el test y obtener el resultado en la terminal, debemos
           ejecutar el siguiente comando:
         </p>
         <pre><code>
-            npm run test
+        npm run test
       </code></pre>
       </div>
       <div class="wrapper-section">

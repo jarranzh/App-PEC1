@@ -87,27 +87,27 @@
           "background":
         </p>
         <pre><code>
-            @color: #4D926F;
-            @background: #3d3d3d;
-            
-            #header {
-                color: @color;
-                background:@background;
-            }
-            h2 {
-                color: @color;
-            }
-      </code></pre>
+        @color: #4D926F;
+        @background: #3d3d3d;
+        
+        #header {
+            color: @color;
+            background:@background;
+        }
+        h2 {
+            color: @color;
+        }
+        </code></pre>
         <p>El código anterior en LESS compilaría en el siguiente código CSS:</p>
         <pre><code>
-            #header {
-                color: #4D926F;
-                background: #3d3d3d;
-                }
-                h2 {
-                color: #4D926F;
-                }
-      </code></pre>
+        #header {
+            color: #4D926F;
+            background: #3d3d3d;
+            }
+            h2 {
+            color: #4D926F;
+            }
+        </code></pre>
         <h3>Anidamiento</h3>
         <p>
           CSS admite anidamiento lógico, pero los bloques de código no están
@@ -120,44 +120,44 @@
           código que se insertan dentro de otros:
         </p>
         <pre><code>
-            #header {
-                h1 {
-                    font-size: 26px;
-                    font-weight: bold;
-                }
-                p {
-                    font-size: 16px;
-                    a {
-                    text-decoration: none;
-                    color: red;
-                    &:hover {
-                        border-width: 1px;
-                        color: #fff;
-                    }
-                    }
+        #header {
+            h1 {
+                font-size: 26px;
+                font-weight: bold;
+            }
+            p {
+                font-size: 16px;
+                a {
+                text-decoration: none;
+                color: red;
+                &:hover {
+                    border-width: 1px;
+                    color: #fff;
                 }
                 }
-      </code></pre>
+            }
+            }
+        </code></pre>
         <p>
           El código anterior en LESS se compilará como el siguiente código CSS:
         </p>
         <pre><code>
-            #header h1 {
-                font-size: 26px;
-                font-weight: bold;
-                }
-                #header p {
-                font-size: 16px;
-                }
-                #header p a {
-                text-decoration: none;
-                color: red;
-                }
-                #header p a:hover {
-                border-width: 1px;
-                color: #fff;
-                }
-      </code></pre>
+        #header h1 {
+            font-size: 26px;
+            font-weight: bold;
+            }
+            #header p {
+            font-size: 16px;
+            }
+            #header p a {
+            text-decoration: none;
+            color: red;
+            }
+            #header p a:hover {
+            border-width: 1px;
+            color: #fff;
+            }
+         </code></pre>
         <h3>Mixins</h3>
         <p>
           Los mixins permiten incrustrar todas las propiedades de una clase
@@ -170,32 +170,32 @@
         </p>
         <p>A continuación se muestra un ejemplo de mixin:</p>
         <pre><code>
-            .rounded-corners (@radius: 5px) {
-                -webkit-border-radius: @radius;
-                -moz-border-radius: @radius;
-                border-radius: @radius;
-                }
-                
-                #header {
-                .rounded-corners;
-                }
-                #footer {
-                .rounded-corners(10px);
-                }
-      </code></pre>
+        .rounded-corners (@radius: 5px) {
+            -webkit-border-radius: @radius;
+            -moz-border-radius: @radius;
+            border-radius: @radius;
+            }
+            
+            #header {
+            .rounded-corners;
+            }
+            #footer {
+            .rounded-corners(10px);
+            }
+          </code></pre>
         <p>El código anterior en LESS compilaría en el siguiente código CSS:</p>
         <pre><code>
-            #header {
-                -webkit-border-radius: 5px;
-                -moz-border-radius: 5px;
-                border-radius: 5px;
-                }
-                #footer {
-                -webkit-border-radius: 10px;
-                -moz-border-radius: 10px;
-                border-radius: 10px;
-                }
-      </code></pre>
+        #header {
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            }
+            #footer {
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            }
+        </code></pre>
         <h3>Funciones y operaciones</h3>
         <p>
           LESS permite operaciones y funciones. Las operaciones permiten la
@@ -206,34 +206,34 @@
         </p>
         <p>A continuación se muestra un ejemplo:</p>
         <pre><code>
-            @the-border: 1px;
-            @base-color: #111;
-            @red:        #842210;
-            
-            #header {
-                color: @base-color * 3;
-                border-left: @the-border;
-                border-right: @the-border * 3;
-            }
-            #footer {
-                color: @base-color + #003300;
-                border-color: desaturate(@red, 10%);
-            }
-      </code></pre>
+        @the-border: 1px;
+        @base-color: #111;
+        @red:        #842210;
+        
+        #header {
+            color: @base-color * 3;
+            border-left: @the-border;
+            border-right: @the-border * 3;
+        }
+        #footer {
+            color: @base-color + #003300;
+            border-color: desaturate(@red, 10%);
+        }
+        </code></pre>
         <p>
           El código anterior en LESS se compilará como el siguiente código CSS:
         </p>
         <pre><code>
-            #header {
-                color: #333333;
-                border-left: 1px;
-                border-right: 3px;
-                }
-                #footer {
-                color: #114411;
-                border-color: #7d2717;
-                }
-      </code></pre>
+        #header {
+            color: #333333;
+            border-left: 1px;
+            border-right: 3px;
+            }
+            #footer {
+            color: #114411;
+            border-color: #7d2717;
+            }
+        </code></pre>
       </div>
 
       <div class="wrapper-section">
