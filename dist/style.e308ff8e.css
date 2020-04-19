@@ -46,11 +46,11 @@ body {
 }
 
 .category_header {
-  display: flex;
-  flex-flow: row;
   align-items: center;
-  justify-content: space-between;
   padding: 60px 40px;
+  /* display: flex;
+  flex-flow: row;
+  justify-content: space-between; */
   background-image: url(/logo_categoria.672404c5.jpg);
   background-size: 100%;
   color: white;
@@ -144,14 +144,14 @@ body {
   margin: auto;
 }
 
-.cards_wrapper {
+.container {
   padding-top: 40px;
 }
-.cards_wrapper .card {
+.container .card {
   border: 1.5px solid #138496;
 }
 
-.cards_wrapper .card:hover {
+.container .card:hover {
   box-shadow: 0 0 10px;
 }
 
