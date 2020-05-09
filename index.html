@@ -6,18 +6,26 @@
     <title>Frontend Academy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
     <script src="index.js"></script>
   </head>
   <body>
     <header class="main_header">
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg">
+          <rect class="logo_rect"/>
+          <polygon class="logo_poly" points="10 16 110 10 110 34 49 39 52 56 110 49 106 71 52 71 62 110 20 110" />
+         
+          <path id="MyPath" fill="none" d="M64,100 Q 84 90, 104 100 T 150 100" />
+          <path id="MyPath2" fill="none" d="M64,110 Q 84 100, 104 110 T 150 110" />
+          
+          <text class="logo_text">
+            <textPath href="#MyPath">rontend</textPath>
+            <textPath href="#MyPath2">Academy</textPath>
+          </text>
+        </svg>
       <h1>FRONTEND ACADEMY</h1>
     </header>
+
+    <!-- <img src="./images/angular_caracteristicas.png" alt="" /> -->
 
     <div class="wrapper container">
       <h2>¿Qué quieres aprender?</h2>
@@ -73,10 +81,7 @@
 
         <div class="row">
           <div class="col-12  col-md mb-5">
-            <a
-              class="container-links"
-              href="./categorias/frameworks_css.html"
-            >
+            <a class="container-links" href="./categorias/frameworks_css.html">
               <div class="card h-100" style="width: 18rem;">
                 <div class="card-header">
                   <h5 class="card-title">Frameworks CSS</h5>
@@ -102,10 +107,7 @@
           </div>
 
           <div class="col-12  col-md mb-5">
-            <a
-              class="container-links"
-              href="./categorias/module_bundlers.html"
-            >
+            <a class="container-links" href="./categorias/module_bundlers.html">
               <div class="card h-100" style="width: 18rem;">
                 <div class="card-header">
                   <h5 class="card-title">Module Bundlers</h5>
@@ -121,6 +123,8 @@
     </div>
   </body>
   <footer>
+    <img src="images/footer_image.jpg" alt="" class="footer_image">
+    <h3>FRONTEND ACADEMY</h3>
     <p>Autora: <em>Jimena Arranz Herrera</em></p>
     <p>Asignatura: <em>Herramientas HTML y CSS I</em></p>
     <p><em>Máster en Desarrollo de Sitios y Aplicaciones Web - UOC</em></p>
