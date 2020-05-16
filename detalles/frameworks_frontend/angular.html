@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Angular</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <script src="../../index.js"></script>
   </head>
@@ -55,6 +61,18 @@
         </div>
       </div>
     </nav>
+    <div class="course_picture">
+      <img
+        srcset="
+          ../../images/destacadas/angular_1200.jpg 1200w,
+          ../../images/destacadas/angular_768.jpg   768w,
+          ../../images/destacadas/angular_425.jpg   425w
+        "
+        sizes="(min-width: 768px) 60vw, 100 vw"
+        src="../../images/destacadas/angular_768.jpg"
+        alt="angular main image"
+      />
+    </div>
     <div class="course_title">
       <img src="../../images/logo_angular.png" />
       <h1>ANGULAR</h1>
@@ -83,7 +101,7 @@
           las usadas para hacer el binding de los datos. En dichas clases
           tenemos propiedades (variables) y métodos (funciones a llamar).
         </p>
-        <img
+        <img class="img_content"
           src="../../images/angular_caracteristicas.png"
           alt="caracteristicas de Angular"
         />

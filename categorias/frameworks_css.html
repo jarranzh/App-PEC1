@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Frameworks CSS</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <script src="../index.js"></script>
   </head>
@@ -44,17 +50,52 @@
 
     <div class="wrapper">
       <h2>¿Qué tecnología te interesa?</h2>
-      <ul class="main_list">
-        <a href="../detalles/frameworks_css/bootstrap.html"
-          ><li>Bootstrap</li></a
-        >
-        <a href="../detalles/frameworks_css/material.html"
-          ><li>Material UI</li></a
-        >
-        <a href="../detalles/frameworks_css/reactstrap.html"
-          ><li>Reactstrap</li></a
-        >
-      </ul>
+      <div class="row wrapper_content">
+        <div class="col-12 col-md mb-5">
+          <a href="../detalles/frameworks_css/bootstrap.html">
+            <div class="card category_card" style="width: 18rem;">
+              <img
+                class="card-img-top category_card_img"
+                src="../images/destacadas/bootstrap_card.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text">Bootstrap</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md mb-5">
+          <a href="../detalles/frameworks_css/material.html">
+            <div class="card category_card" style="width: 18rem;">
+              <img
+                class="card-img-top category_card_img"
+                src="../images/destacadas/material_card.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text">Material UI</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md mb-5">
+          <a href="../detalles/frameworks_css/reactstrap.html">
+            <div class="card category_card" style="width: 18rem;">
+              <img
+                class="card-img-top category_card_img"
+                src="../images/destacadas/reactstrap_card.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                Reactstrap
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
   </body>
   <footer>

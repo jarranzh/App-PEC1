@@ -5,57 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Sass</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="../../style.css" />
-
     <script src="../../index.js"></script>
   </head>
   <body>
     <header class="detail_header">
-        <div class="row justify-content-between">
-          <div class="col-auto">
-            <a href="../../categorias/preprocesadores_css.html">
-              <button type="button" class="btn btn-info">
-                Volver a Preprocesadores CSS
-              </button></a
-            >
-          </div>
-          <div class="col-auto">
-            <a href="../../index.html">
-              <button type="button" class="btn btn-info">
-                Volver a Inicio
-              </button></a
-            >
-          </div>
+      <div class="row justify-content-between">
+        <div class="col-auto">
+          <a href="../../categorias/preprocesadores_css.html">
+            <button type="button" class="btn btn-info">
+              Volver a Preprocesadores CSS
+            </button></a
+          >
         </div>
+        <div class="col-auto">
+          <a href="../../index.html">
+            <button type="button" class="btn btn-info">
+              Volver a Inicio
+            </button></a
+          >
+        </div>
+      </div>
     </header>
     <nav class="myNav">
-        <div class="row justify-content-between">
-          <div class="col-12 col-md-auto">
-            <a href="../../categorias/lenguajes_frontend.html"
-              >Lenguajes Frontend</a
-            >
-          </div>
-          <div class="col-12 col-md-auto">
-            <a href="../../categorias/frameworks_frontend.html"
-              >Frameworks Frontend</a
-            >
-          </div>
-          <div class="col-12 col-md-auto">
-            <a href="../../categorias/preprocesadores_css.html"
-              >Preprocesadores CSS</a
-            >
-          </div>
-          <div class="col-12 col-md-auto">
-            <a href="../../categorias/frameworks_css.html">Frameworks CSS</a>
-          </div>
-          <div class="col-12 col-md-auto">
-            <a href="../../categorias/testing.html">Testing</a>
-          </div>
-          <div class="col-12 col-md-auto">
-            <a href="../../categorias/module_bundlers.html">Module Bundlers</a>
-          </div>
+      <div class="row justify-content-between">
+        <div class="col-12 col-md-auto">
+          <a href="../../categorias/lenguajes_frontend.html"
+            >Lenguajes Frontend</a
+          >
         </div>
-      </nav>    <div class="course_title">
+        <div class="col-12 col-md-auto">
+          <a href="../../categorias/frameworks_frontend.html"
+            >Frameworks Frontend</a
+          >
+        </div>
+        <div class="col-12 col-md-auto">
+          <a href="../../categorias/preprocesadores_css.html"
+            >Preprocesadores CSS</a
+          >
+        </div>
+        <div class="col-12 col-md-auto">
+          <a href="../../categorias/frameworks_css.html">Frameworks CSS</a>
+        </div>
+        <div class="col-12 col-md-auto">
+          <a href="../../categorias/testing.html">Testing</a>
+        </div>
+        <div class="col-12 col-md-auto">
+          <a href="../../categorias/module_bundlers.html">Module Bundlers</a>
+        </div>
+      </div>
+    </nav>
+    <div class="course_picture">
+      <picture>
+        <source
+          srcset="../../images/destacadas/sass.jpg 1826w"
+          media="(min-width: 768px)"
+          sizes="70vw"
+        />
+        <source
+          srcset="../../images/destacadas/sass_1242.jpg 1242w"
+          media="(max-width: 767px) and (min-width: 426px)"
+          sizes="100vw"
+        />
+        <source
+          srcset="../../images/destacadas/sass_856.jpg 856w"
+          media="(max-width: 425px)"
+          sizes="100vw"
+        />
+        <img src="../../images/destacadas/sass.jpg" alt="sass main image" />
+      </picture>
+    </div>
+    <div class="course_title">
       <img src="../../images/logo_sass.png" />
       <h1>Sass</h1>
     </div>
@@ -112,7 +138,8 @@
           Por ejemplo, en el siguiente código en Sass se declaran las variables
           "blue" y "margin":
         </p>
-        <pre><code>
+        <div class="code">
+          <pre><code>
         $blue: #3bbfce
         $margin: 16px
         
@@ -125,19 +152,22 @@
           margin:  $margin/2
           border-color: $blue
       </code></pre>
+        </div>
         <p>Dicho código debe compilar al siguiente código CSS:</p>
-        <pre><code>
+        <div class="code">
+          <pre><code>
         .content-navigation {
           border-color: #3bbfce;
           color: #2b9eab;
-          }
+        }
           
-          .border {
+        .border {
           padding: 8px;
           margin: 8px;
           border-color: #3bbfce;
-          }
+        }
       </code></pre>
+        </div>
         <h3>Nesting</h3>
         <p>
           CSS soporta anidamiento lógico, pero los bloques de código no son
@@ -148,9 +178,11 @@
           En el siguiente ejemplo de código Sass se ve cómo hay bloques de
           código que se insertan dentro de otros:
         </p>
-        <pre><code>
+        <div class="code">
+          <pre><code>
         table.hl {
           margin: 2em 0;
+
           td.ln {
             text-align: right;
           }
@@ -164,11 +196,14 @@
           }
         }
       </code></pre>
+        </div>
         <p>Este código compilado a CSS es el siguiente:</p>
-        <pre><code>
+        <div class="code">
+          <pre><code>
         table.hl {
           margin: 2em 0;
         }
+
         table.hl td.ln {
           text-align: right;
         }
@@ -179,6 +214,7 @@
           font-size: 1.2em;
         }
       </code></pre>
+        </div>
         <h3>Mixins</h3>
         <p>
           CSS no soporta mixins. Cualquier código duplicado debe ser repetido en
@@ -189,47 +225,60 @@
           una forma fácil de alterar el mismo.
         </p>
         <p>A continuación se muestra un ejemplo de mixin:</p>
-        <pre><code>
+        <div class="code">
+          <pre><code>
         @mixin table-base {
+
           th {
             text-align: center;
             font-weight: bold;
           }
-          td, th {padding: 2px}
+
+          td, th {
+            padding: 2px
+          }
         }
         
         #data {
           @include table-base;
         }
       </code></pre>
+        </div>
         <p>Este código tiene el siguiente equivalente en CSS:</p>
-        <pre><code>
+        <div class="code">
+          <pre><code>
         #data th {
           text-align: center;
           font-weight: bold;
         }
+
         #data td, #data th {
           padding: 2px;
         }
       </code></pre>
+        </div>
         <p>Los mixins también soportan argumentos:</p>
-        <pre><code>
-          @mixin left($dist) {
-            float: left;
-            margin-left: $dist;
-          }
-          
-          #data {
-            @include left(10px);
-          }
+        <div class="code">
+          <pre><code>
+        @mixin left($dist) {
+          float: left;
+          margin-left: $dist;
+        }
+        
+        #data {
+          @include left(10px);
+        }
       </code></pre>
+        </div>
         <p>Que es lo mismo en CSS a esto:</p>
-        <pre><code>
+        <div class="code">
+          <pre><code>
         #data {
           float: left;
           margin-left: 10px;
         }
       </code></pre>
+        </div>
         <h3>Herencia</h3>
         <p>
           Mientras CSS3 soporta la jerarquía Document Object Model (DOM), este
@@ -239,11 +288,13 @@
           extendido serán aplicados al selector que hace la llamada.
         </p>
         <p>A continuación se muestra un ejemplo:</p>
-        <pre><code>
+        <div class="code">
+          <pre><code>
         .error {
           border: 1px #f00;
           background: #fdd;
         }
+
         .error.intrusion {
           font-size: 1.3em;
           font-weight: bold;
@@ -254,8 +305,10 @@
           border-width: 3px;
         }
       </code></pre>
+        </div>
         <p>Este código compilado a CSS es el siguiente:</p>
-        <pre><code>
+        <div class="code">
+          <pre><code>
         .error, .badError {
           border: 1px #f00;
           background: #fdd;
@@ -271,6 +324,7 @@
           border-width: 3px;
         }
       </code></pre>
+        </div>
       </div>
 
       <div class="wrapper-section">

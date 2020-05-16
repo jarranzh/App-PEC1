@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Less</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <script src="../../index.js"></script>
   </head>
@@ -28,33 +34,46 @@
       </div>
     </header>
     <nav class="myNav">
-        <div class="row justify-content-between">
-          <div class="col-12 col-md-auto">
-            <a href="../../categorias/lenguajes_frontend.html"
-              >Lenguajes Frontend</a
-            >
-          </div>
-          <div class="col-12 col-md-auto">
-            <a href="../../categorias/frameworks_frontend.html"
-              >Frameworks Frontend</a
-            >
-          </div>
-          <div class="col-12 col-md-auto">
-            <a href="../../categorias/preprocesadores_css.html"
-              >Preprocesadores CSS</a
-            >
-          </div>
-          <div class="col-12 col-md-auto">
-            <a href="../../categorias/frameworks_css.html">Frameworks CSS</a>
-          </div>
-          <div class="col-12 col-md-auto">
-            <a href="../../categorias/testing.html">Testing</a>
-          </div>
-          <div class="col-12 col-md-auto">
-            <a href="../../categorias/module_bundlers.html">Module Bundlers</a>
-          </div>
+      <div class="row justify-content-between">
+        <div class="col-12 col-md-auto">
+          <a href="../../categorias/lenguajes_frontend.html"
+            >Lenguajes Frontend</a
+          >
         </div>
-      </nav>    <div class="course_title">
+        <div class="col-12 col-md-auto">
+          <a href="../../categorias/frameworks_frontend.html"
+            >Frameworks Frontend</a
+          >
+        </div>
+        <div class="col-12 col-md-auto">
+          <a href="../../categorias/preprocesadores_css.html"
+            >Preprocesadores CSS</a
+          >
+        </div>
+        <div class="col-12 col-md-auto">
+          <a href="../../categorias/frameworks_css.html">Frameworks CSS</a>
+        </div>
+        <div class="col-12 col-md-auto">
+          <a href="../../categorias/testing.html">Testing</a>
+        </div>
+        <div class="col-12 col-md-auto">
+          <a href="../../categorias/module_bundlers.html">Module Bundlers</a>
+        </div>
+      </div>
+    </nav>
+    <div class="course_picture">
+      <img
+        srcset="
+          ../../images/destacadas/less_1200.jpg 1200w,
+          ../../images/destacadas/less_768.jpg   768w,
+          ../../images/destacadas/less_425.jpg   425w
+        "
+        sizes="(min-width: 425px) 60vw, 100 vw"
+        src="../../images/destacadas/less_768.jpg"
+        alt="less image"
+      />
+    </div>
+    <div class="course_title">
       <img src="../../images/logo_less.png" />
       <h1>Less</h1>
     </div>
@@ -95,28 +114,34 @@
           En el siguiente código de ejemplo se declaran las variables "color" y
           "background":
         </p>
-        <pre><code>
-        @color: #4D926F;
-        @background: #3d3d3d;
-        
-        #header {
-            color: @color;
-            background:@background;
-        }
-        h2 {
-            color: @color;
-        }
-        </code></pre>
+        <div class="code">
+          <pre><code>
+      @color: #4D926F;
+      @background: #3d3d3d;
+      
+      #header {
+          color: @color;
+          background: @background;
+      }
+
+      h2 {
+          color: @color;
+      }
+      </code></pre>
+        </div>
         <p>El código anterior en LESS compilaría en el siguiente código CSS:</p>
-        <pre><code>
-        #header {
-            color: #4D926F;
-            background: #3d3d3d;
-            }
-            h2 {
-            color: #4D926F;
-            }
-        </code></pre>
+        <div class="code">
+          <pre><code>
+      #header {
+        color: #4D926F;
+        background: #3d3d3d;
+      }
+
+      h2 {
+        color: #4D926F;
+      }
+      </code></pre>
+        </div>
         <h3>Anidamiento</h3>
         <p>
           CSS admite anidamiento lógico, pero los bloques de código no están
@@ -128,45 +153,56 @@
           En el siguiente ejemplo de código Less se ve cómo hay bloques de
           código que se insertan dentro de otros:
         </p>
-        <pre><code>
-        #header {
-            h1 {
-                font-size: 26px;
-                font-weight: bold;
+        <div class="code">
+          <pre><code>
+      #header {
+
+        h1 {
+          font-size: 26px;
+          font-weight: bold;
+        }
+
+        p {
+          font-size: 16px;
+
+          a {
+            text-decoration: none;
+            color: red;
+
+            &:hover {
+              border-width: 1px;
+              color: #fff;
             }
-            p {
-                font-size: 16px;
-                a {
-                text-decoration: none;
-                color: red;
-                &:hover {
-                    border-width: 1px;
-                    color: #fff;
-                }
-                }
-            }
-            }
-        </code></pre>
+          }
+        }
+      }
+      </code></pre>
+        </div>
         <p>
           El código anterior en LESS se compilará como el siguiente código CSS:
         </p>
-        <pre><code>
-        #header h1 {
-            font-size: 26px;
-            font-weight: bold;
-            }
-            #header p {
-            font-size: 16px;
-            }
-            #header p a {
-            text-decoration: none;
-            color: red;
-            }
-            #header p a:hover {
-            border-width: 1px;
-            color: #fff;
-            }
-         </code></pre>
+        <div class="code">
+          <pre><code>
+      #header h1 {
+        font-size: 26px;
+        font-weight: bold;
+      }
+
+      #header p {
+        font-size: 16px;
+      }
+
+      #header p a {
+        text-decoration: none;
+        color: red;
+      }
+
+      #header p a:hover {
+        border-width: 1px;
+        color: #fff;
+      }
+        </code></pre>
+        </div>
         <h3>Mixins</h3>
         <p>
           Los mixins permiten incrustrar todas las propiedades de una clase
@@ -178,33 +214,39 @@
           limpias, así como modificaciones de código más fáciles y rápidas.
         </p>
         <p>A continuación se muestra un ejemplo de mixin:</p>
-        <pre><code>
-        .rounded-corners (@radius: 5px) {
-            -webkit-border-radius: @radius;
-            -moz-border-radius: @radius;
-            border-radius: @radius;
-            }
-            
-            #header {
-            .rounded-corners;
-            }
-            #footer {
-            .rounded-corners(10px);
-            }
-          </code></pre>
-        <p>El código anterior en LESS compilaría en el siguiente código CSS:</p>
-        <pre><code>
-        #header {
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            border-radius: 5px;
-            }
-            #footer {
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            border-radius: 10px;
-            }
+        <div class="code">
+          <pre><code>
+      .rounded-corners (@radius: 5px) {
+        -webkit-border-radius: @radius;
+        -moz-border-radius: @radius;
+        border-radius: @radius;
+      }
+          
+      #header {
+        .rounded-corners;
+      }
+
+      #footer {
+        .rounded-corners(10px);
+      }
         </code></pre>
+        </div>
+        <p>El código anterior en LESS compilaría en el siguiente código CSS:</p>
+        <div class="code">
+          <pre><code>
+      #header {
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+      }
+
+      #footer {
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+      }
+      </code></pre>
+        </div>
         <h3>Funciones y operaciones</h3>
         <p>
           LESS permite operaciones y funciones. Las operaciones permiten la
@@ -214,35 +256,41 @@
           JavaScript, permitiendo la manipulación de valores.
         </p>
         <p>A continuación se muestra un ejemplo:</p>
-        <pre><code>
-        @the-border: 1px;
-        @base-color: #111;
-        @red:        #842210;
-        
-        #header {
-            color: @base-color * 3;
-            border-left: @the-border;
-            border-right: @the-border * 3;
-        }
-        #footer {
-            color: @base-color + #003300;
-            border-color: desaturate(@red, 10%);
-        }
-        </code></pre>
+        <div class="code">
+          <pre><code>
+      @the-border: 1px;
+      @base-color: #111;
+      @red:        #842210;
+      
+      #header {
+        color: @base-color * 3;
+        border-left: @the-border;
+        border-right: @the-border * 3;
+      }
+
+      #footer {
+        color: @base-color + #003300;
+        border-color: desaturate(@red, 10%);
+      }
+      </code></pre>
+        </div>
         <p>
           El código anterior en LESS se compilará como el siguiente código CSS:
         </p>
-        <pre><code>
-        #header {
-            color: #333333;
-            border-left: 1px;
-            border-right: 3px;
-            }
-            #footer {
-            color: #114411;
-            border-color: #7d2717;
-            }
-        </code></pre>
+        <div class="code">
+          <pre><code>
+      #header {
+        color: #333333;
+        border-left: 1px;
+        border-right: 3px;
+      }
+
+      #footer {
+        color: #114411;
+        border-color: #7d2717;
+      }
+      </code></pre>
+        </div>
       </div>
 
       <div class="wrapper-section">

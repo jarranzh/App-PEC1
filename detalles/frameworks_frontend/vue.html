@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Vue</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <script src="../../index.js"></script>
   </head>
@@ -55,6 +61,17 @@
         </div>
       </div>
     </nav>
+    <div class="course_picture">
+      <img
+        srcset="
+          ../../images/destacadas/vue.jpg     825w,
+          ../../images/destacadas/vue_425.jpg 425w
+        "
+        sizes="(min-width: 768px) 60vw, 100 vw"
+        src="../../images/destacadas/vue.jpg"
+        alt="vue main image"
+      />
+    </div>
     <div class="course_title">
       <img src="../../images/logo_vue.png" />
       <h1>VUE</h1>
@@ -77,6 +94,7 @@
           implementada con Vue:
         </p>
         <img
+          class="img_content"
           src="../../images/vue_app.png"
           alt="aplicacion implementada con Vue"
         />

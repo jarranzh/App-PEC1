@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Reactstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <script src="../../index.js"></script>
   </head>
@@ -55,6 +61,26 @@
         </div>
       </div>
     </nav>
+    <div class="course_picture">
+        <picture>
+          <source
+            srcset="../../images/destacadas/reactstrap.jpg 1144w"
+            media="(min-width: 768px)"
+            sizes="70vw"
+          />
+          <source
+            srcset="../../images/destacadas/reactstrap_955.jpg 955w"
+            media="(max-width: 767px) and (min-width: 426px)"
+            sizes="70vw"
+          />
+          <source
+            srcset="../../images/destacadas/reactstrap_660.jpg 660w"
+            media="(max-width: 425px)"
+            sizes="100vw"
+          />
+          <img src="../../images/destacadas/reactstrap.jpg" alt="reactstrap main image" />
+        </picture>
+      </div>
     <div class="course_title">
       <img src="../../images/logo_reactstrap.png" />
       <h1>REACTSTRAP</h1>
@@ -70,22 +96,26 @@
           guardarlo en las dependencias de tu <code>package.json</code>,
           ejecuta:
         </p>
-        <pre><code>
-        npm install --save reactstrap react react-dom
+        <div class="code">
+          <pre><code>
+      npm install --save reactstrap react react-dom
         </code></pre>
+        </div>
         <p>Luego puedes instalar los componentes que necesites como este:</p>
         <img src="../../images/reactstrap_elemento.png" alt="Botón danger" />
         <p>Ejecutando el siguiente comando:</p>
-        <pre><code>
-        import React from 'react';
-        import { Button } from 'reactstrap';
-        
-        export default (props) => {
-            return (
-            &ltButton color="danger">Danger!&lt/Button&gt
-            );
-        };
+        <div class="code">
+          <pre><code>
+      import React from 'react';
+      import { Button } from 'reactstrap';
+      
+      export default (props) => {
+        return (
+          &ltButton color="danger">Danger!&lt/Button&gt
+        );
+      };
         </code></pre>
+        </div>
       </div>
       <div class="wrapper-section">
         <h2>¿Quieres saber más?</h2>

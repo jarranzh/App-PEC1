@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Webpack</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <script src="../../index.js"></script>
   </head>
@@ -55,10 +61,25 @@
         </div>
       </div>
     </nav>
+
+    <div class="course_picture">
+      <img
+        srcset="
+          ../../images/destacadas/webpack_1300.jpg 1300w,
+          ../../images/destacadas/webpack_768.jpg   768w,
+          ../../images/destacadas/webpack_425.jpg   425w
+        "
+        sizes="(min-width: 768px) 60vw, 100 vw"
+        src="../../images/destacadas/webpack_768.jpg"
+        alt="webpack image"
+      />
+    </div>
+
     <div class="course_title">
       <img src="../../images/logo_webpack.png" />
       <h1>Webpack</h1>
     </div>
+
     <div class="wrapper">
       <div class="wrapper-section">
         <h2>¿Qué es Webpack?</h2>
@@ -72,6 +93,7 @@
           A continuación se muestra el paradigma tecnológico de Webpack:
         </p>
         <img
+          class="img_content"
           src="../../images/webpack_elemento.png"
           alt="Paradigma tecnológico de Webpack"
         />

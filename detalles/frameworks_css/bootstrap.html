@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <script src="../../index.js"></script>
   </head>
@@ -58,11 +64,14 @@
     <div class="course_picture">
       <picture>
         <source
-          srcset="../../images/destacadas/bootstrap.jpg"
-          media="(min-width: 768px)"
+          srcset="../../images/destacadas/bootstrap.jpg 819w"
+          media="(min-width: 426px)"
+          sizes="70vw"
         />
-        <source srcset="../../images/destacadas/bootstrap_mobile.png" />
-        <img src="../../images/destacadas/bootstrap.jpg" alt="" />
+        <source srcset="../../images/destacadas/bootstrap_425.jpg"
+        media="(max-width: 425px)"
+        sizes="100vw" />
+        <img src="../../images/destacadas/bootstrap.jpg"  alt="" />
       </picture>
     </div>
     <div class="course_title">
@@ -148,7 +157,7 @@
           capacidades avanzadas de miniaturas tipográficas, formatos para
           mensajes de alerta y barras de progreso. Estos son unos ejemplos de
           los botones que ofrece:
-          <img
+          <img class="img_content"
             src="../../images/bootstrap_buttons.png"
             alt="Botones de bootstrap"
           />

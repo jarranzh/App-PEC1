@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>PostCSS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <script src="../../index.js"></script>
   </head>
@@ -28,33 +34,52 @@
       </div>
     </header>
     <nav class="myNav">
-        <div class="row justify-content-between">
-          <div class="col-12 col-md-auto">
-            <a href="../../categorias/lenguajes_frontend.html"
-              >Lenguajes Frontend</a
-            >
-          </div>
-          <div class="col-12 col-md-auto">
-            <a href="../../categorias/frameworks_frontend.html"
-              >Frameworks Frontend</a
-            >
-          </div>
-          <div class="col-12 col-md-auto">
-            <a href="../../categorias/preprocesadores_css.html"
-              >Preprocesadores CSS</a
-            >
-          </div>
-          <div class="col-12 col-md-auto">
-            <a href="../../categorias/frameworks_css.html">Frameworks CSS</a>
-          </div>
-          <div class="col-12 col-md-auto">
-            <a href="../../categorias/testing.html">Testing</a>
-          </div>
-          <div class="col-12 col-md-auto">
-            <a href="../../categorias/module_bundlers.html">Module Bundlers</a>
-          </div>
+      <div class="row justify-content-between">
+        <div class="col-12 col-md-auto">
+          <a href="../../categorias/lenguajes_frontend.html"
+            >Lenguajes Frontend</a
+          >
         </div>
-      </nav>    <div class="course_title">
+        <div class="col-12 col-md-auto">
+          <a href="../../categorias/frameworks_frontend.html"
+            >Frameworks Frontend</a
+          >
+        </div>
+        <div class="col-12 col-md-auto">
+          <a href="../../categorias/preprocesadores_css.html"
+            >Preprocesadores CSS</a
+          >
+        </div>
+        <div class="col-12 col-md-auto">
+          <a href="../../categorias/frameworks_css.html">Frameworks CSS</a>
+        </div>
+        <div class="col-12 col-md-auto">
+          <a href="../../categorias/testing.html">Testing</a>
+        </div>
+        <div class="col-12 col-md-auto">
+          <a href="../../categorias/module_bundlers.html">Module Bundlers</a>
+        </div>
+      </div>
+    </nav>
+    <div class="course_picture">
+      <picture>
+        <source
+          srcset="../../images/destacadas/postcss.jpg 1280w"
+          media="(min-width: 426px)"
+          sizes="70vw"
+        />
+        <source
+          srcset="../../images/destacadas/postcss_705.jpg 705w"
+          media="(max-width: 425px)"
+          sizes="100vw"
+        />
+        <img
+          src="../../images/destacadas/postcss.jpg"
+          alt="postcss main image"
+        />
+      </picture>
+    </div>
+    <div class="course_title">
       <img src="../../images/logo_postcss.png" />
       <h1>PostCSS</h1>
     </div>

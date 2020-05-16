@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Frameworks Frontend</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <script src="../index.js"></script>
   </head>
@@ -46,13 +52,52 @@
 
     <div class="wrapper">
       <h2>¿Qué tecnología te interesa?</h2>
-      <ul class="main_list">
-        <a href="../detalles/frameworks_frontend/angular.html"
-          ><li>Angular</li></a
-        >
-        <a href="../detalles/frameworks_frontend/react.html"><li>React</li></a>
-        <a href="../detalles/frameworks_frontend/vue.html"><li>Vue</li></a>
-      </ul>
+      <div class="row wrapper_content">
+        <div class="col-12 col-md mb-5">
+          <a href="../detalles/frameworks_frontend/angular.html">
+            <div class="card category_card" style="width: 18rem;">
+              <img
+                class="card-img-top category_card_img"
+                src="../images/destacadas/angular_card.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text">Angular</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md mb-5">
+          <a href="../detalles/frameworks_frontend/react.html">
+            <div class="card category_card" style="width: 18rem;">
+              <img
+                class="card-img-top category_card_img"
+                src="../images/destacadas/react_card.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text">React</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md mb-5">
+          <a href="../detalles/frameworks_frontend/vue.html">
+            <div class="card category_card" style="width: 18rem;">
+              <img
+                class="card-img-top category_card_img"
+                src="../images/destacadas/vue_card.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                Vue
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
   </body>
   <footer>

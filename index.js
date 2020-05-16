@@ -1,9 +1,11 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+//import "bootstrap";
+//import "bootstrap/dist/css/bootstrap.min.css";
+//import "bootstrap/dist/css/bootstrap.css";
 
 document.addEventListener("DOMContentLoaded", function() {
   let header = "";
   if (document.querySelector(".main_header")) {
-    header = document.querySelector(".main_header");
+    header = document.querySelector("h1");
   } else if (document.querySelectorAll(".category_header").length > 0) {
     header = document
       .querySelector(".category_header")

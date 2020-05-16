@@ -82,6 +82,23 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   padding-bottom: 20px;
 }
+.wrapper .card.category_card {
+  transition: 0.3s ease;
+}
+
+.category_card_img {
+  height: 160px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.category_card:hover {
+  background-color: rgba(110, 108, 108, 0.726);
+}
+
+.category_card .card-body {
+  border-top: 1px solid #138496;
+}
 
 .col-auto {
   padding-bottom: 10px;
@@ -110,21 +127,21 @@ body {
   padding: 20px;
 }
 
-.main_list li {
-  list-style: none;
-  padding: 15px 5px;
-  width: fit-content;
-  font-size: 20px;
+.wrapper .wrapper_content {
+  padding-top: 20px;
 }
 
-.main_list li:hover {
-  box-shadow: 0 0 5px;
-}
 .wrapper-section {
   padding-top: 20px;
 }
 .wrapper-section h2 {
   padding-bottom: 20px;
+}
+
+.code {
+  border: 1px solid gray;
+  border-radius: 4px;
+  overflow-x: scroll;
 }
 
 .bottom-section h3 {
@@ -159,7 +176,7 @@ body {
   height: auto;
 }
 
-.wrapper img {
+.img_content {
   width: 100%;
   display: block;
   margin: auto;
@@ -169,12 +186,25 @@ body {
   padding-top: 40px;
 }
 
-.container .card {
+.container .card,
+.wrapper .card {
   border: 1.5px solid #138496;
 }
 
-.container .card:hover {
+.container .card:hover,
+.category_card:hover {
   box-shadow: 0 0 10px;
+}
+
+.container .card-header .card-title {
+  transition: 0.3s ease;
+}
+.container-links {
+  transition: 0.3s ease;
+}
+.container .card:hover > .card-header .card-title {
+  font-size: 1.35rem;
+  font-weight: 600;
 }
 
 .card-title {
@@ -221,6 +251,13 @@ footer p {
   height: 100px;
 }
 
+@media screen and (min-width: 425px) {
+  .course_picture img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .logo {
     position: absolute;
@@ -237,7 +274,9 @@ footer p {
   .category_header {
     padding: 60px 40px;
   }
-  .course_picture img {
+
+  .course_picture img,
+  .course_picture picture {
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -251,7 +290,7 @@ footer p {
   .wrapper {
     padding: 60px 80px;
   }
-  .wrapper img {
+  .img_content {
     max-width: 80%;
   }
   iframe {

@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Lenguajes Frontend</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <script src="../index.js"></script>
   </head>
@@ -48,13 +54,53 @@
 
     <div class="wrapper">
       <h2>¿Qué tecnología te interesa?</h2>
-      <ul class="main_list">
-        <a href="../detalles/lenguajes_frontend/javascript.html">
-          <li>JavaScript</li>
-        </a>
-        <a href="../detalles/lenguajes_frontend/html.html"><li>HTML</li></a>
-        <a href="../detalles/lenguajes_frontend/css.html"><li>CSS</li></a>
-      </ul>
+      <div class="row wrapper_content">
+        <div class="col-12 col-md mb-5">
+          <a href="../detalles/lenguajes_frontend/javascript.html">
+
+         <div class="card category_card" style="width: 18rem;">
+              <img
+                class="card-img-top category_card_img"
+                src="../images/destacadas/javascript_card.jpeg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text">JavaScript</p>
+              </div>
+            </div> 
+          </a>
+        </div>
+
+       <div class="col-12 col-md mb-5">
+          <a href="../detalles/lenguajes_frontend/html.html">
+            <div class="card category_card" style="width: 18rem;">
+              <img
+                class="card-img-top category_card_img"
+                src="../images/destacadas/html_card.jpeg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text">HTML</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md mb-5">
+          <a href="../detalles/lenguajes_frontend/css.html">
+            <div class="card category_card" style="width: 18rem;">
+              <img
+                class="card-img-top category_card_img"
+                src="../images/destacadas/css_425.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                CSS
+              </div>
+            </div>
+          </a>
+        </div> 
+      </div>
     </div>
   </body>
   <footer>
