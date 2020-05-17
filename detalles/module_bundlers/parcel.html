@@ -6,11 +6,11 @@
     <title>Parcel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous"
-  />
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <script src="../../index.js"></script>
   </head>
@@ -73,10 +73,7 @@
           media="(max-width: 425px)"
           sizes="100vw"
         />
-        <img
-          src="../../images/destacadas/parcel.jpg"
-          alt="parcel main image"
-        />
+        <img src="../../images/destacadas/parcel.jpg" alt="parcel main image" />
       </picture>
     </div>
     <div class="course_title">
@@ -96,10 +93,27 @@
           A continuación se muestra un ejemplo de Hola Mundo utilizando Parcel
           para construir toda la aplicación:
         </p>
-        <img class="img_content"
-          src="../../images/parcel_elemento.png"
-          alt="Ejemplo de uso de parcel"
-        />
+        <picture>
+          <source
+            srcset="../../images/parcel_elemento_1329.jpg 1329w"
+            media="(min-width: 768px)"
+            sizes="80vw"
+          />
+          <source
+            srcset="../../images/parcel_elemento_984.jpg 984w"
+            media="(min-width: 426px)"
+            sizes="80vw"
+          />
+          <source
+            srcset="../../images/parcel_elemento_473.jpg 473w"
+            media="(max-width: 425px)"
+            sizes="90vw"
+          />
+          <img
+            src="../../images/parcel_elemento_984.jpg"
+            alt="Ejemplo de uso de parcel"
+          />
+        </picture>
       </div>
       <div class="wrapper-section">
         <h2>Principales características de Parcel:</h2>
@@ -140,13 +154,23 @@
       </div>
       <div class="wrapper-section">
         <h2>¿Quieres saber más?</h2>
+        <img
+          class="img_content"
+          srcset="
+            ../../images/parcel_contenido_1200.jpg 1200w,
+            ../../images/parcel_contenido_768.jpg   768w,
+            ../../images/parcel_contenido_425.jpg   425w
+          "
+          src="../../images/parcel_contenido_768.jpg"
+          alt="parcel image"
+        />
         <p>
           En la página web de Parcel hay documentación detallada para conocer
           todas las características. Puedes acceder haciendo click
           <a href="https://es.parceljs.org/getting_started.html">aquí</a>.
         </p>
       </div>
-      <div class="bottom-section">
+      <div class="bottom-section animation_content_text">
         <h3>Quizás te interese:</h3>
         <ul class="bottom-section_list">
           <li><a href="./webpack.html">Aprender sobre Webpack</a></li>
@@ -155,7 +179,8 @@
       </div>
     </div>
 
-    <footer>
+     <footer>
+      <img src="../../images/footer_image.jpg" alt="" class="footer_image footer_image_detailpage" />
       Fuente:
       <a href="https://es.parceljs.org/">Parcel</a>
     </footer>

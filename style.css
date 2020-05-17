@@ -144,6 +144,7 @@ body {
   border: 1px solid gray;
   border-radius: 4px;
   overflow-x: scroll;
+  margin-bottom: 20px;
 }
 
 .bottom-section h3 {
@@ -314,6 +315,12 @@ footer p {
   height: 100px;
 }
 
+.footer_image.footer_image_detailpage {
+  display: flex;
+  flex-flow: column;
+  height: 50px;
+}
+
 @media screen and (min-width: 425px) {
   .course_picture img {
     display: block;
@@ -354,7 +361,7 @@ footer p {
     padding: 60px 80px;
   }
   .img_content {
-    max-width: 80%;
+    max-width: 70%;
   }
   iframe {
     width: 560px;

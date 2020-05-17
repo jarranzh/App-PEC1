@@ -69,7 +69,7 @@
           sizes="70vw"
         />
         <source
-          srcset="../../images/destacadas/bootstrap_425.jpg"
+          srcset="../../images/destacadas/bootstrap_425.jpg 425w"
           media="(max-width: 425px)"
           sizes="100vw"
         />
@@ -141,6 +141,16 @@
           tabletas y computadoras con baja y alta resolución (pantalla ancha).
           Esto ajusta el ancho de las columnas automáticamente.
         </p>
+        <img
+          class="img_content"
+          srcset="
+            ../../images/bootstrap_contenido_803.jpg 803w,
+            ../../images/bootstrap_contenido_768.jpg 768w,
+            ../../images/bootstrap_contenido_425.jpg 425w
+          "
+          src="../../images/bootstrap_contenido_768.jpg"
+          alt="bootstrap image"
+        />
         <h3>Comprensión de la hoja de estilo CSS</h3>
         <p>
           Bootstrap proporciona un conjunto de hojas de estilo que proveen
@@ -159,12 +169,20 @@
           capacidades avanzadas de miniaturas tipográficas, formatos para
           mensajes de alerta y barras de progreso. Estos son unos ejemplos de
           los botones que ofrece:
-          <img
-            class="img_content"
-            src="../../images/bootstrap_buttons.png"
-            alt="Botones de bootstrap"
-          />
         </p>
+        <picture>
+          <source
+            srcset="../../images/bootstrap_buttons.jpg 904w"
+            media="(min-width: 426px)"
+            sizes="80vw"
+          />
+          <source
+            srcset="../../images/bootstrap_buttons_430.jpg 430w"
+            media="(max-width: 425px)"
+            sizes="90vw"
+          />
+          <img src="../../images/bootstrap_buttons.jpg" alt="" />
+        </picture>
         <h3>Plug-ins de JavaScript</h3>
         <p>
           Los componentes de JavaScript para Bootstrap están basados en la
@@ -193,7 +211,7 @@
           >
         </p>
       </div>
-      <div class="bottom-section">
+      <div class="bottom-section animation_content_text">
         <h3>Quizás te interese:</h3>
         <ul class="bottom-section_list">
           <li><a href="./material.html">Aprender sobre Material UI</a></li>
@@ -202,7 +220,8 @@
       </div>
     </div>
 
-    <footer>
+     <footer>
+      <img src="../../images/footer_image.jpg" alt="" class="footer_image footer_image_detailpage" />
       Fuente:
       <a href="https://es.wikipedia.org/wiki/Bootstrap_(framework)"
         >Wikipedia</a
