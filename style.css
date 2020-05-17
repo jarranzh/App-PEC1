@@ -228,17 +228,21 @@ body {
   display: block;
   margin: auto;
   animation: bounce 5s infinite;
+  -webkit-animation: bounce 5s infinite;
 }
+
 .animation_content_rotate {
   display: block;
   margin: auto;
   animation: rotate 5s infinite;
+  -webkit-animation: rotate 5s infinite;
 }
 
 .animation_content_text {
   display: block;
   margin: auto;
   animation: bounceText 2s infinite;
+  -webkit-animation: bounceText 2s infinite;
 }
 
 .container {
