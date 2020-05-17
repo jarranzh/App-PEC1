@@ -6,11 +6,11 @@
     <title>Vue</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous"
-  />
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <script src="../../index.js"></script>
   </head>
@@ -67,7 +67,7 @@
           ../../images/destacadas/vue.jpg     825w,
           ../../images/destacadas/vue_425.jpg 425w
         "
-        sizes="(min-width: 768px) 60vw, 100 vw"
+        sizes="(min-width: 768px) 60vw, 100vw"
         src="../../images/destacadas/vue.jpg"
         alt="vue main image"
       />
@@ -95,7 +95,11 @@
         </p>
         <img
           class="img_content"
-          src="../../images/vue_app.png"
+          srcset="
+            ../../images/vue_app_718.jpg 718w,
+            ../../images/vue_app_424.jpg 424w
+          "
+          src="../../images/vue_app_718.jpg"
           alt="aplicacion implementada con Vue"
         />
       </div>
@@ -108,6 +112,18 @@
             >aquí.</a
           >
         </p>
+        <div class="course_picture">
+          <img
+            srcset="
+              ../../images/vue_contenido2_1200.jpg 1200w,
+              ../../images/vue_contenido2_768.jpg   768w,
+              ../../images/vue_contenido2_425.jpg   425w
+            "
+            sizes="(min-width: 425px) 40vw, 50vw"
+            src="../../images/vue_contenido2_768.jpg"
+            alt="vue image"
+          />
+        </div>
       </div>
       <div class="bottom-section">
         <h3>Quizás te interese:</h3>
