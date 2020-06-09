@@ -12,7 +12,7 @@ body {
   text-shadow: 3px 3px 3px black;
   padding: 90px 0;
   width: 100%;
-  background-image: url("./images/logo_header.jpeg");
+  background-image: url("./images/logo_header_425.jpeg");
 }
 
 .main_header h1 {
@@ -344,7 +344,9 @@ footer p {
   .category_header {
     padding: 60px 40px;
   }
-
+  .main_header {
+    background-image: url("./images/logo_header.jpeg");
+  }
   /* .course_picture img,
   .course_picture picture {
     display: block;
