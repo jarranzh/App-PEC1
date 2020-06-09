@@ -69,7 +69,7 @@ body {
 
 .category_header {
   padding: 20px;
-  background-image: url(./images/logo_categoria.jpg);
+  background-image: url(./images/logo_categoria_425.jpg);
   background-size: 100%;
   color: white;
   text-shadow: 3px 3px 5px black;
@@ -321,11 +321,14 @@ footer p {
   height: 50px;
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 425px) and (max-width: 767px) {
   .course_picture img {
     display: block;
     margin-right: auto;
     margin-left: auto;
+  }
+  .category_header {
+    background-image: url(./images/logo_categoria_718.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -343,10 +346,12 @@ footer p {
   }
   .category_header {
     padding: 60px 40px;
+    background-image: url(./images/logo_categoria.jpg);
   }
   .main_header {
     background-image: url("./images/logo_header.jpeg");
   }
+
   /* .course_picture img,
   .course_picture picture {
     display: block;
